@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+  --error: #e7195a;
+  --background: #f0f2f5;
+  --header-bg: #fafafa;
+  --primary: #E60012;
+}
+
+body {
+  background: var(--background);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background: var(--header-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pages {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+ 
+.notlar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+
+.not-detay {
+  width: 250px; 
+  height: 220px; 
+  padding: 16px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  transition: 0.3s;
+}
+
+.not-detay:hover {
+  transform: scale(1.02);
+}
+
+/* 🔹 Başlık */
+.not-detay h4 {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8px;
+}
+
+
+.not-detay p {
+  font-size: 14px;
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #555;
+}
+
+
+.zaman {
+  font-size: 12px;
+  color: gray;
+  margin-top: auto;
+}
+
+.not-detay .sil {
+  background: #e7195a;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.not-detay .sil:hover {
+  background: #c70039;
+}
+
+/* 🔹 Form Stilleri */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input {
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+form button {
+  background: var(--primary);
+  color: #fff;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #40a9ff;
+}
+
+.error {
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav button {
+  background: #fff;
+  color: var(--error);
+  border: 2px solid var(--error);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .notlar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .not-detay {
+    width: 90%;
+  }
+}
